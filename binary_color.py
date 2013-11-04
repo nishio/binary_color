@@ -36,7 +36,7 @@ def convert():
     d = ImageDraw.Draw(image)
     for i, c in enumerate(data):
         d.point((i % w, i / w), color_map(ord(c)))
-        image.save(args.out_file, 'PNG')
+    image.save(args.out_file, 'PNG')
 
 
 if __name__ == '__main__':
